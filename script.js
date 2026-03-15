@@ -241,20 +241,4 @@ function toggleJourney(item, id) {
   if (!wasOpen) item.classList.add('open');
 }
 
-// ==============================
-// CONTACT FORM
-// ==============================
-const form = document.getElementById('contact-form');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.innerHTML = '<i class="fa-solid fa-check"></i> Message Sent!';
-    btn.style.background = 'linear-gradient(135deg, #34d399, #059669)';
-    setTimeout(() => {
-      btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
-      btn.style.background = '';
-      form.reset();
-    }, 3000);
-  });
-}
+
