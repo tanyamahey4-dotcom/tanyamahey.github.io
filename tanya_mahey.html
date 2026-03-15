@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanya Mahey — Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<nav id="navbar">
+  <div class="nav-logo">TM</div>
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link active">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#experience" class="nav-link">Journey</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <a href="Tanya_Mahey_CV.pdf" download class="nav-cv-btn">
+    <i class="fa-solid fa-download"></i> CV
+  </a>
+  <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section id="home" class="section hero-section">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-text-col">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> Open to opportunities
+      </div>
+      <h1 class="hero-title reveal">
+        Hi, I'm<br>
+        <span class="gradient-text" id="typing-name">Tanya Mahey</span>
+      </h1>
+      <p class="hero-roles reveal">
+        <span class="role active-role">Data Analytics</span>
+        <span class="role-sep">·</span>
+        <span class="role">Business Intelligence</span>
+        <span class="role-sep">·</span>
+        <span class="role">Machine Learning</span>
+      </p>
+      <p class="hero-desc reveal">
+        MSc Business Analytics @ University of Galway. Former SWE @ Airtel Payments Bank.
+        I turn messy data into clear decisions.
+      </p>
+      <div class="hero-ctas reveal">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Experience</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Use Cases Managed</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual-col reveal">
+      <div class="avatar-wrapper" id="avatar-wrapper">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <div class="avatar-frame">
+          <img src="images/avatar.png" alt="Tanya Mahey" class="avatar-img" id="avatar-img">
+          <div class="eye eye-left"><div class="pupil"></div></div>
+          <div class="eye eye-right"><div class="pupil"></div></div>
+        </div>
+        <div class="floating-chip chip-1"><i class="fa-brands fa-python"></i> Python</div>
+        <div class="floating-chip chip-2"><i class="fa-solid fa-chart-pie"></i> Analytics</div>
+        <div class="floating-chip chip-3"><i class="fa-solid fa-database"></i> SQL</div>
+        <div class="floating-chip chip-4"><i class="fa-solid fa-brain"></i> ML</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="section about-section">
+  <div class="section-label reveal">01 — About</div>
+  <div class="about-layout">
+    <div class="about-left reveal">
+      <h2 class="section-title">Bridging <em>Technology</em><br>& <em>Business Insight</em></h2>
+      <p class="about-body">
+        I'm a Business Analytics master's student at the National University of Galway, with a B.Tech in Information Technology from IGDTUW, India. Before moving to Ireland, I spent 2 years as an Assistant Manager at <strong>Airtel Payments Bank</strong> — building backend systems, managing large-scale payment onboarding, and solving 20+ production incidents daily.
+      </p>
+      <p class="about-body">
+        My analytical journey started with machine learning and computer vision research during my undergrad. Today I'm driven by one question: <em>how can data make better decisions faster?</em>
+      </p>
+      <div class="about-tags">
+        <span class="tag">MSc Business Analytics</span>
+        <span class="tag">B.Tech IT</span>
+        <span class="tag">2 Yrs Industry</span>
+        <span class="tag">Galway, Ireland</span>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-cards-grid">
+        <div class="about-info-card reveal" style="--d:0s">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h4>Based In</h4>
+          <p>Galway, Ireland</p>
+        </div>
+        <div class="about-info-card reveal" style="--d:0.1s">
+          <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h4>Degree</h4>
+          <p>MSc Business Analytics</p>
+        </div>
+        <div class="about-info-card reveal" style="--d:0.2s">
+          <div class="info-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h4>Background</h4>
+          <p>Software Engineering</p>
+        </div>
+        <div class="about-info-card reveal" style="--d:0.3s">
+          <div class="info-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h4>Goal</h4>
+          <p>Data Analyst / BI Engineer</p>
+        </div>
+      </div>
+
+      <div class="interests-block reveal">
+        <h4 class="interests-title">What excites me about data</h4>
+        <div class="interest-item">
+          <span class="interest-num">01</span>
+          <span>Transforming raw data into actionable insights</span>
+        </div>
+        <div class="interest-item">
+          <span class="interest-num">02</span>
+          <span>Building dashboards & visual stories</span>
+        </div>
+        <div class="interest-item">
+          <span class="interest-num">03</span>
+          <span>Applying ML to solve real business problems</span>
+        </div>
+        <div class="interest-item">
+          <span class="interest-num">04</span>
+          <span>Helping organisations make data-driven decisions</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SKILLS ========== -->
+<section id="skills" class="section skills-section">
+  <div class="section-label reveal">02 — Skills</div>
+  <h2 class="section-title centered reveal">My <em>Toolkit</em></h2>
+  <p class="section-sub reveal">Click any category to see proficiency levels</p>
+
+  <div class="skills-layout">
+    <div class="skill-categories reveal">
+      <button class="skill-cat active" onclick="showSkill('programming', this)">
+        <i class="fa-solid fa-code"></i>
+        <span>Programming</span>
+      </button>
+      <button class="skill-cat" onclick="showSkill('datatools', this)">
+        <i class="fa-solid fa-wrench"></i>
+        <span>Data Tools</span>
+      </button>
+      <button class="skill-cat" onclick="showSkill('concepts', this)">
+        <i class="fa-solid fa-lightbulb"></i>
+        <span>Concepts</span>
+      </button>
+      <button class="skill-cat" onclick="showSkill('cloud', this)">
+        <i class="fa-solid fa-cloud"></i>
+        <span>Cloud</span>
+      </button>
+      <button class="skill-cat" onclick="showSkill('collaboration', this)">
+        <i class="fa-solid fa-people-group"></i>
+        <span>Collaboration</span>
+      </button>
+      <button class="skill-cat" onclick="showSkill('softskills', this)">
+        <i class="fa-solid fa-star"></i>
+        <span>Soft Skills</span>
+      </button>
+    </div>
+
+    <div class="skill-chart-area reveal">
+      <canvas id="skillsChart"></canvas>
+    </div>
+  </div>
+
+  <div class="skill-pills-section reveal">
+    <div class="pill-group">
+      <span class="pill-label">Languages</span>
+      <span class="skill-pill">Python</span>
+      <span class="skill-pill">Java</span>
+      <span class="skill-pill">SQL</span>
+    </div>
+    <div class="pill-group">
+      <span class="pill-label">Data & BI</span>
+      <span class="skill-pill">Tableau</span>
+      <span class="skill-pill">Excel</span>
+      <span class="skill-pill">MySQL</span>
+      <span class="skill-pill">Scikit-learn</span>
+    </div>
+    <div class="pill-group">
+      <span class="pill-label">Cloud</span>
+      <span class="skill-pill">Azure ADF</span>
+      <span class="skill-pill">Data Lake</span>
+      <span class="skill-pill">PowerApps</span>
+    </div>
+    <div class="pill-group">
+      <span class="pill-label">Dev</span>
+      <span class="skill-pill">Spring Boot</span>
+      <span class="skill-pill">Kafka</span>
+      <span class="skill-pill">REST/JSON</span>
+      <span class="skill-pill">Jira</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<section id="projects" class="section projects-section">
+  <div class="section-label reveal">03 — Projects</div>
+  <h2 class="section-title reveal">Selected <em>Work</em></h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card featured reveal">
+      <div class="proj-accent"></div>
+      <div class="proj-num">01</div>
+      <div class="proj-tags">
+        <span>Deep Learning</span>
+        <span>Healthcare AI</span>
+        <span>CNN</span>
+      </div>
+      <h3>Brain Tumor Detection</h3>
+      <p>Built a CNN-based deep learning architecture to detect brain tumors in MRI scans. Applied data augmentation & normalization to improve accuracy, demonstrating real-world AI-assisted diagnostics.</p>
+      <div class="proj-stack">
+        <span>Python</span><span>TensorFlow</span><span>Keras</span><span>OpenCV</span><span>Scikit-learn</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="--d:0.1s">
+      <div class="proj-accent"></div>
+      <div class="proj-num">02</div>
+      <div class="proj-tags">
+        <span>Computer Vision</span>
+        <span>ML</span>
+      </div>
+      <h3>Sea Classification</h3>
+      <p>Computer vision model to classify sea images by environmental features. Used feature extraction, normalization, evaluated via confusion matrices and accuracy metrics.</p>
+      <div class="proj-stack">
+        <span>Python</span><span>Scikit-learn</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="--d:0.2s">
+      <div class="proj-accent"></div>
+      <div class="proj-num">03</div>
+      <div class="proj-tags">
+        <span>Data Analysis</span>
+        <span>Python</span>
+      </div>
+      <h3>Sales Data Analysis</h3>
+      <p>Analysing business sales data to identify trends, revenue patterns, and customer behaviour using Python and data visualisation tools.</p>
+      <div class="proj-stack">
+        <span>Python</span><span>Pandas</span><span>Matplotlib</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="--d:0.3s">
+      <div class="proj-accent"></div>
+      <div class="proj-num">04</div>
+      <div class="proj-tags">
+        <span>ML</span>
+        <span>Clustering</span>
+      </div>
+      <h3>Customer Segmentation</h3>
+      <p>Clustering techniques to segment customers based on purchasing behaviour to support targeted marketing strategies.</p>
+      <div class="proj-stack">
+        <span>Python</span><span>K-Means</span><span>Scikit-learn</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="--d:0.4s">
+      <div class="proj-accent"></div>
+      <div class="proj-num">05</div>
+      <div class="proj-tags">
+        <span>BI</span>
+        <span>Dashboard</span>
+      </div>
+      <h3>Power BI Dashboard</h3>
+      <p>Interactive BI dashboard visualising KPIs, sales performance, and operational metrics to support executive decision-making.</p>
+      <div class="proj-stack">
+        <span>Power BI</span><span>DAX</span><span>Excel</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== EXPERIENCE / JOURNEY ========== -->
+<section id="experience" class="section journey-section">
+  <div class="section-label reveal">04 — Journey</div>
+  <h2 class="section-title centered reveal">My <em>Story So Far</em></h2>
+
+  <div class="timeline-v">
+
+    <div class="tv-item reveal" onclick="toggleJourney(this, 'masters')">
+      <div class="tv-connector">
+        <div class="tv-dot"></div>
+        <div class="tv-line"></div>
+      </div>
+      <div class="tv-card">
+        <div class="tv-header">
+          <div class="tv-meta">
+            <span class="tv-year">2025 – Present</span>
+            <span class="tv-type edu">Education</span>
+          </div>
+          <h3>MSc Business Analytics</h3>
+          <p class="tv-org">National University of Galway, Ireland</p>
+          <i class="fa-solid fa-chevron-down tv-toggle-icon"></i>
+        </div>
+        <div class="tv-details" id="masters">
+          <p>Focus areas: Data analytics, business intelligence, machine learning, data visualisation, and strategic decision-making. Expected Grade: 1:1.</p>
+          <div class="tv-pills">
+            <span>Data Analytics</span><span>BI</span><span>Machine Learning</span><span>Strategy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tv-item reveal" style="--d:0.1s" onclick="toggleJourney(this, 'airtel')">
+      <div class="tv-connector">
+        <div class="tv-dot"></div>
+        <div class="tv-line"></div>
+      </div>
+      <div class="tv-card">
+        <div class="tv-header">
+          <div class="tv-meta">
+            <span class="tv-year">Jul 2023 – Jul 2025</span>
+            <span class="tv-type work">Work</span>
+          </div>
+          <h3>Assistant Manager — Payments Hub</h3>
+          <p class="tv-org">Airtel Payments Bank Ltd., India</p>
+          <i class="fa-solid fa-chevron-down tv-toggle-icon"></i>
+        </div>
+        <div class="tv-details" id="airtel">
+          <ul>
+            <li>Resolved 20+ production incidents daily via Jira, analysing REST/JSON API requests</li>
+            <li>Managed onboarding of 100+ payment use cases across QA, DevOps & product stakeholders</li>
+            <li>Built backend solutions using Java, Spring Boot, Kafka, and SQL</li>
+            <li>Led sprint planning, backlog refinement & API-based system integrations</li>
+          </ul>
+          <div class="tv-pills">
+            <span>Java</span><span>Spring Boot</span><span>SQL</span><span>Kafka</span><span>Jira</span><span>Agile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tv-item reveal" style="--d:0.2s" onclick="toggleJourney(this, 'btech')">
+      <div class="tv-connector">
+        <div class="tv-dot"></div>
+        <div class="tv-line"></div>
+      </div>
+      <div class="tv-card">
+        <div class="tv-header">
+          <div class="tv-meta">
+            <span class="tv-year">Aug 2019 – Jul 2023</span>
+            <span class="tv-type edu">Education</span>
+          </div>
+          <h3>B.Tech — Information Technology</h3>
+          <p class="tv-org">IGDTUW, New Delhi, India</p>
+          <i class="fa-solid fa-chevron-down tv-toggle-icon"></i>
+        </div>
+        <div class="tv-details" id="btech">
+          <p>CGPA: 7.94. Led brand outreach for the university's technical fest, securing sponsorships worth €400 from 100+ organisations. Final year projects in deep learning and computer vision.</p>
+          <div class="tv-pills">
+            <span>Python</span><span>ML</span><span>Deep Learning</span><span>Computer Vision</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tv-item reveal" style="--d:0.3s" onclick="toggleJourney(this, 'unschool')">
+      <div class="tv-connector">
+        <div class="tv-dot"></div>
+        <div class="tv-line"></div>
+      </div>
+      <div class="tv-card">
+        <div class="tv-header">
+          <div class="tv-meta">
+            <span class="tv-year">Nov 2021 – Jan 2022</span>
+            <span class="tv-type intern">Internship</span>
+          </div>
+          <h3>Marketing Intern</h3>
+          <p class="tv-org">Unschool</p>
+          <i class="fa-solid fa-chevron-down tv-toggle-icon"></i>
+        </div>
+        <div class="tv-details" id="unschool">
+          <ul>
+            <li>Led data-driven digital marketing campaign — generated 45+ leads</li>
+            <li>Achieved 7 successful enrollments worth €700/month</li>
+            <li>Analysed campaign metrics to optimise targeting & conversion</li>
+          </ul>
+          <div class="tv-pills">
+            <span>Marketing Analytics</span><span>Campaign Strategy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tv-item reveal" style="--d:0.4s" onclick="toggleJourney(this, 'everest')">
+      <div class="tv-connector">
+        <div class="tv-dot"></div>
+      </div>
+      <div class="tv-card">
+        <div class="tv-header">
+          <div class="tv-meta">
+            <span class="tv-year">Dec 2021 – Feb 2022</span>
+            <span class="tv-type vol">Volunteer</span>
+          </div>
+          <h3>Volunteer — Team Everest NGO</h3>
+          <p class="tv-org">Team Everest, India</p>
+          <i class="fa-solid fa-chevron-down tv-toggle-icon"></i>
+        </div>
+        <div class="tv-details" id="everest">
+          <ul>
+            <li>Created 20+ learning-based games for K12 students</li>
+            <li>Engaged 67+ underprivileged students</li>
+            <li>Researched learning challenges to inform content design</li>
+          </ul>
+          <div class="tv-pills">
+            <span>Education</span><span>Community</span><span>Research</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Certifications -->
+  <div class="certs-block reveal">
+    <h3 class="certs-title">Certifications</h3>
+    <div class="certs-grid">
+      <div class="cert-card">
+        <i class="fa-solid fa-certificate"></i>
+        <span>Data Analytics Job Simulation — Deloitte</span>
+      </div>
+      <div class="cert-card">
+        <i class="fa-solid fa-certificate"></i>
+        <span>JavaScript & React JS — GDG Ranchi</span>
+      </div>
+      <div class="cert-card">
+        <i class="fa-solid fa-certificate"></i>
+        <span>JavaScript & Node JS Backend — GDG Ranchi</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="section contact-section">
+  <div class="section-label reveal">05 — Contact</div>
+  <h2 class="section-title centered reveal">Let's <em>Connect</em></h2>
+  <p class="section-sub reveal">I'm actively looking for data analyst & BI roles. Open to freelance, full-time, and internship opportunities in Ireland or remote.</p>
+
+  <div class="contact-layout">
+    <div class="contact-info reveal">
+      <a href="mailto:tanyamahey4@gmail.com" class="contact-link">
+        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">tanyamahey4@gmail.com</span>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/tanya-mahey-098a47210/" target="_blank" class="contact-link">
+        <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+        <div>
+          <span class="contact-link-label">LinkedIn</span>
+          <span class="contact-link-value">Tanya Mahey</span>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a href="tel:+353873808165" class="contact-link">
+        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+        <div>
+          <span class="contact-link-label">Phone</span>
+          <span class="contact-link-value">+353 087 380 8165</span>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a href="Tanya_Mahey_CV.pdf" download class="contact-link cv-dl">
+        <div class="contact-icon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div>
+          <span class="contact-link-label">Resume</span>
+          <span class="contact-link-value">Download CV</span>
+        </div>
+        <i class="fa-solid fa-download"></i>
+      </a>
+    </div>
+
+    <form class="contact-form reveal" id="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" placeholder="john@example.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" placeholder="Data Analyst Role — Dublin">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea rows="5" placeholder="Hi Tanya, I'd love to chat about..."></textarea>
+      </div>
+      <button type="submit" class="btn-primary full-width">
+        <i class="fa-solid fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-name">Tanya Mahey</span>
+    <span class="footer-copy">© 2025 · Built with curiosity & caffeine</span>
+    <div class="footer-socials">
+      <a href="mailto:tanyamahey4@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/tanya-mahey-098a47210/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
